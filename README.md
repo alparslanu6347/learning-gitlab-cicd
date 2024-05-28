@@ -88,7 +88,7 @@ sudo gitlab-runner verify
         Verifying runner... is valid                        runner=sJBzBRhDm        # yukarıdaki ile aynı
 ```
 
-# Pipeline hazırlayıp Click `Commit changes` yapmadan önce, pipeline içinde kullanacağımız `predefined variable` OLMAYAN variable varsa, sensitive veya sensitive olmayan variables tanımlaması yapalım. Sensitive olmayanları direkt olarak pipeline içine de yazabilirim.
+***Pipeline hazırlayıp Click `Commit changes` yapmadan önce, pipeline içinde kullanacağımız `predefined variable` OLMAYAN variable varsa, sensitive veya sensitive olmayan variables tanımlaması yapalım. Sensitive olmayanları direkt olarak pipeline içine de yazabilirim.***
 
 **_Örnekte bu kısmı kullanmıyorum, direkt olarak pipeline içerisinde sensitive olmayan variable kullanıyorum, sadece gitlab dashboard üzerinden sensitive ve sensitive olmayan variable kullanımına örnek olması açısından yazdım_**
 
