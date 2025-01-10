@@ -1,4 +1,6 @@
-# Part-1 : Launch a gitlab-server on AWS
+# learning-gitlab-cicd
+
+## Part-1 : Launch a gitlab-server on AWS
 
 - Go to AWS Management Console, we need a `gitlab-server` and we need to install agent into that server.
 
@@ -28,7 +30,7 @@ sudo dnf install git
 git -v      # git version 2.40.1
 ```
 
-# Part-2 :Create gitlab project/repository `learning-gitlab-cicd` & prepare a runner in gitlab
+## Part-2 :Create gitlab project/repository `learning-gitlab-cicd` & prepare a runner in gitlab
 
 - Go to gitlab
 
@@ -48,7 +50,7 @@ git -v      # git version 2.40.1
     `Create runner`
   - `Step 1` altındaki komutu `sudo` ekleyerek terminalde koşmam gerek AMA BU KOMUTTAN ÖNCE gitlab runner'ı agent olarak kurmam gerekiyor.
 
-# Part-3 : Install GitLab Runner manually & Register a runner on gitlab-server ec2-instance
+## Part-3 : Install GitLab Runner manually & Register a runner on gitlab-server ec2-instance
 
 ```bash (pwd : home/ec2-user)
 # Simply download one of the binaries for your system:
@@ -75,7 +77,7 @@ sudo gitlab-runner register  --url https://gitlab.com  --token glrt-tQE6qjWfdF2S
 sudo gitlab-runner status
 ```
 
-# Part-4 : Ensure you have runners available and match with the one in the gitlab-server ec2-instance
+## Part-4 : Ensure you have runners available and match with the one in the gitlab-server ec2-instance
 
 - Go to gitlab
 
@@ -108,7 +110,7 @@ sudo gitlab-runner verify
                                                                           ==> `Environment` : `Default`
                                                                           İLAVE OLARAK put check mark `Mask variable` --> Click `Add variable`
 
-# Part-5 : Prepare `.gitlab-ci.yml` and deploy
+## Part-5 : Prepare `.gitlab-ci.yml` and deploy
 
 - Bu pipeline içerisinde en başta stage bölümünde stage isimlerini listeleyebiliriz, ama yazmasak da çalışır.
 
@@ -207,6 +209,6 @@ deploy-prod:
 
 - Pipeline aşamalarını/joblarını buradan gözlemleyebilirsin`Build` -- `Pipelines`
 
-# Resources
+## Resources
 
 - https://gitlab.com/arrowlevent/learning-gitlab-cicd
